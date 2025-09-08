@@ -44,6 +44,25 @@ try:
             border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }}
+        /* 组织单位样式 */
+        .organization {{
+            margin-bottom: 15px;
+        }}
+        .org-title {{
+            font-weight: bold;
+            color: #ffcc00 !important;
+            font-size: 1.15rem !important;
+            line-height: 1.7 !important;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }}
+        .org-content {{
+            margin-left: 20px;
+            margin-top: 5px;
+            color: #f0f7ff !important;
+            font-size: 1.15rem !important;
+            line-height: 1.7 !important;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }}
         /* 标题样式 - 亮白色与蓝色背景形成强对比 */
         h1 {{
             color: #ffffff !important;
@@ -81,33 +100,13 @@ try:
             color: #ffffff !important;
             font-weight: bold !important;
         }}
-
-        # 在现有的<style>标签内添加以下样式
-        .organization {
-            margin-bottom: 15px;
-        }
-        .org-title {
-            font-weight: bold;
-            color: #ffcc00 !important;
-            font-size: 1.15rem !important;
-            line-height: 1.7 !important;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-        }
-        .org-content {
-            margin-left: 20px;
-            margin-top: 5px;
-            color: #f0f7ff !important;
-            font-size: 1.15rem !important;
-            line-height: 1.7 !important;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-        }
         </style>
         """,
         unsafe_allow_html=True
     )
 
     # 页面内容
-    st.markdown('<div class="main-content">')
+    st.markdown('<div class="main-content">', unsafe_allow_html=True)
     
     # 会议标题区域
     st.title("2025年第六届国际健康生物医学工程与生物信息学会议")
