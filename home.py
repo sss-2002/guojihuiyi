@@ -81,6 +81,26 @@ try:
             color: #ffffff !important;
             font-weight: bold !important;
         }}
+
+        # 在现有的<style>标签内添加以下样式
+        .organization {
+            margin-bottom: 15px;
+        }
+        .org-title {
+            font-weight: bold;
+            color: #ffcc00 !important;
+            font-size: 1.15rem !important;
+            line-height: 1.7 !important;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        .org-content {
+            margin-left: 20px;
+            margin-top: 5px;
+            color: #f0f7ff !important;
+            font-size: 1.15rem !important;
+            line-height: 1.7 !important;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
         </style>
         """,
         unsafe_allow_html=True
