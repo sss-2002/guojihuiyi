@@ -5,7 +5,7 @@ import base64
 st.set_page_config(page_title="背景图片示例", layout="wide")
 
 # 替换为你的本地图片路径
-IMAGE_PATH = "E:\background/beijing.jpg"  # 例如："D:/photos/my_bg.png" 或 "./images/background.jpg"
+IMAGE_PATH = "E:/background/beijing.jpg"  # 例如："D:/photos/my_bg.png" 或 "./images/background.jpg"
 
 def get_base64_image(path):
     """将图片转换为base64编码"""
