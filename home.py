@@ -18,10 +18,10 @@ try:
     st.markdown(
         f"""
         <style>
-        /* 整个页面容器，消除顶部可能的空白 */
+        /* 调整顶部容器内边距，消除顶部白色区域 */
         .reportview-container .main .block-container {{
             padding-top: 0rem;
-            padding-bottom: 0rem;
+            padding-bottom: 2rem;
             padding-left: 2rem;
             padding-right: 2rem;
         }}
@@ -39,7 +39,7 @@ try:
             backdrop-filter: blur(5px);
             padding: 40px;
             border-radius: 10px;
-            margin: 0 auto;  # 顶部无 margin，消除顶部白色区域相关影响
+            margin: 0 auto;  
             max-width: 1000px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
