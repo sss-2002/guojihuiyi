@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 
 # 设置页面配置
-st.set_page_config(page_title="背景图片示例", layout="wide")
+st.set_page_config(page_title="国际会议", layout="wide")
 
 # 替换为你的本地图片路径
 IMAGE_PATH = "./beijing.jpg"  # 例如："D:/photos/my_bg.png" 或 "./images/background.jpg"
