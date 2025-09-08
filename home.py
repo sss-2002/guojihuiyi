@@ -87,7 +87,7 @@ try:
     )
 
     # 页面内容
-    st.markdown('<div class="main-content">', unsafe_allow_html=True)
+    st.markdown('<div class="main-content">')
     
     # 会议标题区域
     st.title("2023年全球科技创新与可持续发展国际会议")
