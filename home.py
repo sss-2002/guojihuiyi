@@ -94,7 +94,7 @@ try:
     st.markdown("### The 6th International Conference on Health Biomedical Engineering and Bioinformatics 2025")
     
     # 会议基本信息
-    st.markdown('<h3 class="section-title">会议概览</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 class="section-title">会议简介</h3>', unsafe_allow_html=True)
     st.write("""
     2025 年第六届国际健康生物医学工程与生物信息学会议（ICBEBH 2025）由西安电子科技
 大学和IEEE联合主办，旨在搭建全球专家，学者与从业者的学术交流与合作平台。会议主要
@@ -112,55 +112,83 @@ ICBEBH会议涵盖广泛的主题，将围绕以下八大主题展开深入探�
 和生命健康研究领域的热点问题，携手促进学术交流与合作。面向广大学者公开征集论文，诚
 邀各位研究者积极参与投稿。期待您的光临，共同见证这一学术盛会的成功举办！
     """)
+
+    # 大会组织单位
+    st.markdown('<h3 class="section-title">大会组织单位</h3>', unsafe_allow_html=True)
+    
+    st.markdown("""
+    <div class="organization">
+        <div class="org-title">主办单位：</div>
+        <div class="org-content">
+            西安电子科技大学生命科学技术学院、分子与神经影像教育部工程研究中心、<br>
+            陕西省高等学校学科创新医学信息感知与智能诊疗引智基地、西安智能精准诊疗国际科技合作基地
+        </div>
+    </div>
+    
+    <div class="organization">
+        <div class="org-title">技术支持单位：</div>
+        <div class="org-content">IEEE（电气与电子工程师协会）</div>
+    </div>
+    
+    <div class="organization">
+        <div class="org-title">承办单位：</div>
+        <div class="org-content">西安电子科技大学生命科学技术学院生物光学实验室</div>
+    </div>
+    
+    <div class="organization">
+        <div class="org-title">协办单位：</div>
+        <div class="org-content">
+            西安电子科技大学国际合作与交流部、西安先进医学成像与智能诊疗国际联合研究中心、<br>
+            广东省仪器仪表学会科学仪器专业委员会
+        </div>
+    </div>
+    
+    <div class="organization">
+        <div class="org-title">合办单位：</div>
+        <div class="org-content">集思未来高等研究院</div>
+    </div>
+    """, unsafe_allow_html=True)
     
     # 关键信息
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.info("📅 会议时间：2023年11月15-17日")
+        st.info("📅 会议时间：2025年7月19-21日")
     with col2:
-        st.info("📍 会议地点：中国·北京国际会议中心")
+        st.info("📍 会议地点：中国·西安电子科技大学")
     with col3:
         st.info("🌐 会议语言：中英文（提供同声传译）")
     
     # 主要议题
     st.markdown('<h3 class="section-title">主要议题</h3>', unsafe_allow_html=True)
     topics = [
-        "清洁能源与碳中和技术创新",
-        "人工智能在可持续发展中的应用",
-        "全球公共卫生与健康科技",
-        "智慧城市与绿色建筑",
-        "循环经济与资源高效利用",
-        "数字转型与包容性增长"
+        "分子影像",
+        "神经影像",
+        "体外诊断",
+        "微纳米技术",
+        "生物传感器",
+        "生物医学工程",
+        "生物信息学",
+        "生命健康"
     ]
     for topic in topics:
         st.write(f"• {topic}")
     
-    # 会议亮点
-    st.markdown('<h3 class="section-title">会议亮点</h3>', unsafe_allow_html=True)
-    st.write("""
-    - 超过50位来自全球的顶尖专家主题演讲
-    - 200+场学术报告与专题讨论
-    - 国际技术与成果展示区
-    - 青年学者创新论坛
-    - 政企对接与合作洽谈会
-    """)
     
     # 参会方式
     st.markdown('<h3 class="section-title">参会方式</h3>', unsafe_allow_html=True)
     st.write("""
-    本次会议采用线上线下结合的方式举办，欢迎全球相关领域人士参与：
+    本次会议采用线上线下结合的方式举办，欢迎相关领域人士参与：
     - 线下参会：需提前注册并缴纳会议费用
     - 线上参会：提供直播与回放服务，需提前在线登记
     
-    注册截止日期：2023年10月30日
+    注册截止日期：2025年7月19日
     """)
     
     # 联系信息
     st.markdown('<h3 class="section-title">联系我们</h3>', unsafe_allow_html=True)
     st.write("""
-    会议邮箱：conference@example.com  
-    联系电话：+86-10-12345678  
-    官方网站：www.example-conference.com
+    会议注册和报名相关事宜，请通过E-mail联系大会组委会王老师，联系邮箱：
+icbebh@yeah.net
     """)
     
     st.markdown('</div>', unsafe_allow_html=True)
